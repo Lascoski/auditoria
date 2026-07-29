@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --color-teal-950: #0a3540;
+  --color-teal-900: #0d4f5c;
+  --color-teal-800: #116878;
+  --color-teal-700: #158293;
+  --color-teal-600: #1a9caf;
+  --color-teal-500: #00a896;
+  --color-teal-400: #22c4b0;
+  --color-teal-100: #e0f5f3;
+  --color-teal-50: #f0faf9;
+
+  --color-slate-950: #0d1f22;
+  --color-slate-800: #2a3f44;
+  --color-slate-500: #5a7178;
+  --color-slate-300: #b8cdd2;
+  --color-slate-100: #eef3f4;
+  --color-slate-50: #f6f9fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: #0d1f22;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #b8cdd2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a7178;
+}
