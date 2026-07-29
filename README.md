@@ -6,7 +6,7 @@ Sistema desenvolvido para auxiliar na auditoria de contas hospitalares, permitin
 
 A aplicação está disponível em:
 
-➡️ https://auditmed-oosn.vercel.app/
+➡️ site-auditoria.vercel.app
 
 ## 🛠️ Tecnologias utilizadas
 
