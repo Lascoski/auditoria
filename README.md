@@ -6,7 +6,7 @@ Sistema desenvolvido para auxiliar na auditoria de contas hospitalares, permitin
 
 A aplicação está disponível em:
 
-➡️ site-auditoria.vercel.app
+➡️ auditoria-teal.vercel.app
 
 ## 🛠️ Tecnologias utilizadas
 
