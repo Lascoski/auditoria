@@ -18,7 +18,7 @@ export default function ComoFunciona() {
     {
       num: '04',
       title: 'Suporte na contestação',
-      desc: 'Acompanhamos o processo de contestação com a operadora ou prestador, elaborando os recursos necessários.',
+      desc: 'Orientamos como proceder e acompanhamos o processo de contestação com o prestador, elaborando os recursos necessários.',
     },
   ]
 

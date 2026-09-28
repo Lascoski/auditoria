@@ -29,10 +29,37 @@ export default function Contato() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          {/* Left info */}
+
+        {/* ── Quem sou eu ─────────────────────────────────────── */}
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-20 pb-20 border-b border-slate-100">
+
+          {/* Foto */}
+          <div className="relative">
+            <div className="aspect-[3/4] rounded-sm overflow-hidden bg-teal-100 max-w-sm mx-auto md:mx-0">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D03AQH2ld3fgi8GMg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725881575030?e=1791417600&v=beta&t=yvVrCn5fNglPTCdf34WdPtNNZDnezs2sXH3cSYhM3M0"
+                alt="Enfermeira auditora"
+                className="w-full h-full object-cover"
+              />
+              {/* Overlay badge */}
+              <div className="absolute bottom-4 left-4 right-4 bg-teal-950/90 backdrop-blur-sm text-white rounded-sm px-5 py-4">
+                <div style={{ fontFamily: 'var(--font-display)' }} className="text-lg leading-snug">
+                  Enfermeira Auditora
+                </div>
+                <div className="text-teal-300 text-xs mt-1">COREN ativo · Especialização em Auditoria em Saúde</div>
+              </div>
+            </div>
+
+            {/* Floating stat */}
+            <div className="absolute -top-4 -right-4 md:right-0 bg-teal-500 text-white rounded-sm px-4 py-3 shadow-lg">
+              <div style={{ fontFamily: 'var(--font-display)' }} className="text-2xl leading-none">Natali </div>
+              <div className="text-xs opacity-90 mt-0.5">+ de 12 anos de experiência</div>
+            </div>
+          </div>
+
+          {/* Texto */}
           <div>
-            <div className="text-xs font-semibold tracking-widest uppercase text-teal-500 mb-4">Fale conosco</div>
+            <div className="text-xs font-semibold tracking-widest uppercase text-teal-500 mb-4">Quem sou eu</div>
             <h2
               style={{ fontFamily: 'var(--font-display)' }}
               className="text-4xl md:text-5xl text-teal-950 leading-tight mb-6"
@@ -41,21 +68,52 @@ export default function Contato() {
               <br />
               <span className="italic">sua situação</span>
             </h2>
-            <p className="text-slate-500 leading-relaxed mb-10">
-              Entre em contato para uma análise preliminar gratuita. Sem compromisso — avaliamos sua documentação e informamos se há irregularidades a contestar.
+
+            <p className="text-slate-600 leading-relaxed mb-5">
+              Sou enfermeira com especialização em Auditoria em Saúde e mais de 12 anos de experiência na área hospitalar, realizo análise técnica de contas médicas hospitalares e ambulatoriais. Trabalhei em operadora de saúde, hospitais e clínicas — e hoje coloco esse conhecimento a serviço de <strong className="text-teal-900">você, paciente</strong>.
+            </p>
+            <p className="text-slate-600 leading-relaxed mb-8">
+              Sei exatamente como as cobranças indevidas acontecem: itens duplicados, materiais não utilizados, procedimentos com código errado, taxas abusivas. Minha missão é garantir que você pague <em>apenas o que é justo</em> — com relatório técnico detalhado e suporte total na contestação.
             </p>
 
-            <div className="space-y-6">
+            {/* Credenciais */}
+            <div className="grid grid-cols-2 gap-3">
               {[
-                {
-                  icon: (
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                      <path d="M9 1C5.68 1 3 3.68 3 7C3 11.25 9 17 9 17C9 17 15 11.25 15 7C15 3.68 12.32 1 9 1ZM9 9C7.9 9 7 8.1 7 7C7 5.9 7.9 5 9 5C10.1 5 11 5.9 11 7C11 8.1 10.1 9 9 9Z" stroke="#0d4f5c" strokeWidth="1.4" />
-                    </svg>
-                  ),
-                  label: 'Atendimento remoto',
-                  value: 'Em todo o Brasil',
-                },
+                { icon: '🎓', label: 'Especialista em Auditoria', sub: 'Pós-graduação lato sensu' },
+                { icon: '📋', label: 'COREN 668667', sub: 'Registro profissional em dia' },
+                { icon: '🏥', label: '4.800+ contas', sub: 'Auditadas com sucesso' },
+                { icon: '🔒', label: 'Sigilo absoluto', sub: 'Contrato + NDA garantidos' },
+              ].map(c => (
+                <div key={c.label} className="bg-slate-50 border border-slate-100 rounded-sm px-4 py-3">
+                  <div className="text-lg mb-1">{c.icon}</div>
+                  <div className="text-xs font-semibold text-teal-950">{c.label}</div>
+                  <div className="text-xs text-slate-400 mt-0.5">{c.sub}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ── Formulário de contato ────────────────────────────── */}
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+
+          {/* Left info */}
+          <div>
+            <div className="text-xs font-semibold tracking-widest uppercase text-teal-500 mb-4">Fale comigo</div>
+            <h3
+              style={{ fontFamily: 'var(--font-display)' }}
+              className="text-3xl md:text-4xl text-teal-950 leading-tight mb-6"
+            >
+              Entre em contato
+              <br />
+              <span className="italic">sem compromisso</span>
+            </h3>
+            <p className="text-slate-500 leading-relaxed mb-10">
+              Envie os detalhes do seu caso e contrate nossa análise especializada. Se houver irregularidades na sua conta, orientarei você sobre como proceder.
+            </p>
+
+            <div className="space-y-5">
+              {[
                 {
                   icon: (
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -74,6 +132,15 @@ export default function Contato() {
                   ),
                   label: 'E-mail',
                   value: 'contato@auditormedpro.com.br',
+                },
+                {
+                  icon: (
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M9 1C5.68 1 3 3.68 3 7C3 11.25 9 17 9 17C9 17 15 11.25 15 7C15 3.68 12.32 1 9 1ZM9 9C7.9 9 7 8.1 7 7C7 5.9 7.9 5 9 5C10.1 5 11 5.9 11 7C11 8.1 10.1 9 9 9Z" stroke="#0d4f5c" strokeWidth="1.4" />
+                    </svg>
+                  ),
+                  label: 'Atendimento',
+                  value: 'Em todo o Brasil (remoto)',
                 },
                 {
                   icon: (
@@ -118,7 +185,7 @@ export default function Contato() {
                   Mensagem enviada!
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Recebemos seu contato. Nossa equipe retornará em até <strong>24 horas úteis</strong> para dar início à análise preliminar gratuita.
+                  Recebi seu contato. Retornarei em até <strong>24 horas úteis</strong> para dar início à análise preliminar gratuita.
                 </p>
                 <button
                   onClick={() => { setEnviado(false); setForm({ nome: '', email: '', telefone: '', tipo: '', mensagem: '' }) }}
@@ -191,6 +258,7 @@ export default function Contato() {
             )}
           </div>
         </div>
+
       </div>
     </section>
   )

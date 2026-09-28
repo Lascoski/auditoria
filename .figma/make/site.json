@@ -1,0 +1,10 @@
+{
+  "description": "Provides private health audit services for medical bills with initial cost evaluation and easy contact options for interested clients.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

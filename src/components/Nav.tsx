@@ -21,7 +21,7 @@ export default function Nav() {
             </svg>
           </span>
           <span style={{ fontFamily: 'var(--font-display)' }} className="text-teal-900 text-lg tracking-tight leading-none">
-            AuditMed<span className="text-teal-500 italic"> Pro</span>
+            AuditMed<span className="text-teal-500 italic"> </span>
           </span>
         </Link>
 

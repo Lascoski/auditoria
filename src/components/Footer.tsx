@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-8 pb-8 border-b border-teal-800">
           <div>
             <div style={{ fontFamily: 'var(--font-display)' }} className="text-white text-lg mb-1">
-              AuditMed<span className="italic text-teal-400"> Pro</span>
+              AuditMed<span className="italic text-teal-400"> </span>
             </div>
             <p className="text-sm max-w-xs">
               Auditoria particular de contas médicas em todo o Brasil.

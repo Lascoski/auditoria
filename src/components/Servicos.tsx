@@ -8,7 +8,7 @@ export default function Servicos() {
         </svg>
       ),
       title: 'Auditoria de Contas Hospitalares',
-      desc: 'Análise minuciosa de AIH, APAC e contas particulares. Verificamos cada item cobrado: diárias, taxas, materiais, medicamentos e procedimentos.',
+      desc: 'Análise minuciosa de contas particulares. Verificamos cada item cobrado: diárias, taxas, materiais, medicamentos e procedimentos.',
     },
     {
       icon: (
@@ -18,7 +18,7 @@ export default function Servicos() {
         </svg>
       ),
       title: 'Auditoria Prévia',
-      desc: 'Revisão preventiva antes do pagamento. Identificamos glosas potenciais e negociamos com a operadora ou prestador antes de você desembolsar.',
+      desc: 'Revisão preventiva antes do pagamento ao hospital. Identifico glosas potenciais e oriento como você pode proceder.',
     },
     {
       icon: (
@@ -27,8 +27,8 @@ export default function Servicos() {
           <path d="M9 12L11 14L15 10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
-      title: 'Recurso de Glosas',
-      desc: 'Elaboração técnica de recurso com embasamento clínico e regulatório. Maximizamos o reembolso de valores glosados indevidamente.',
+      
+      desc: 'Elaboração técnica de recurso com embasamento. Maximizamos o reembolso de valores cobrados indevidamente.',
     },
     {
       icon: (
