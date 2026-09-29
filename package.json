@@ -2,7 +2,7 @@
   "name": "figma-make-app",
   "version": "1.0.0",
   "private": true,
-  "description": "",
+  "description": "Sistema desenvolvido para auxiliar na auditoria de contas hospitalares, permitindo análise de cobranças, inconsistências e acompanhamento de serviços.",
   "license": "ISC",
   "author": "",
   "type": "module",
@@ -14,6 +14,9 @@
     "format": "oxfmt"
   },
   "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^8.3.0"
@@ -28,5 +31,14 @@
     "tailwindcss": "^4.0.0",
     "typescript": "^5.7.0",
     "vite": "^8.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lascoski/auditoria.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Lascoski/auditoria/issues"
+  },
+  "homepage": "https://github.com/Lascoski/auditoria#readme"
 }

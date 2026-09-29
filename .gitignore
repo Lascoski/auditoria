@@ -11,5 +11,6 @@ logs/
 *.log
 .claude-replay.*
 .tmp-*
-
+backend/node_modules/
 node_modules/
+backend/.env

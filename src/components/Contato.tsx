@@ -17,11 +17,36 @@ export default function Contato() {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
   }
 
-  function enviar(e: React.FormEvent) {
-    e.preventDefault()
-    setEnviando(true)
-    setTimeout(() => { setEnviando(false); setEnviado(true) }, 1200)
+  async function enviar(e: React.FormEvent) {
+  e.preventDefault()
+  setEnviando(true)
+
+  try {
+    const resposta = await fetch('http://localhost:3001/contato', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(form),
+    })
+
+    const dados = await resposta.json()
+
+    if (!resposta.ok) {
+      throw new Error(dados.erro || 'Erro ao enviar mensagem')
+    }
+
+    setEnviado(true)
+
+  } catch (erro) {
+    console.error(erro)
+
+    alert('Não foi possível enviar sua mensagem. Tente novamente.')
+
+  } finally {
+    setEnviando(false)
   }
+}
 
   const inputClass =
     'w-full border border-slate-200 rounded-sm px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-colors'
@@ -131,7 +156,7 @@ export default function Contato() {
                     </svg>
                   ),
                   label: 'E-mail',
-                  value: 'contato@auditormedpro.com.br',
+                  value: 'natalilascoskii@gmail.com',
                 },
                 {
                   icon: (
@@ -206,7 +231,7 @@ export default function Contato() {
                     <input required type="email" name="email" value={form.email} onChange={handle} placeholder="seu@email.com" className={inputClass} />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-teal-950 tracking-wide mb-1.5">Telefone / WhatsApp</label>
+                    <label className="block text-xs font-semibold text-teal-950 tracking-wide mb-1.5">Telefone / Telegram</label>
                     <input name="telefone" value={form.telefone} onChange={handle} placeholder="(00) 00000-0000" className={inputClass} />
                   </div>
                 </div>
