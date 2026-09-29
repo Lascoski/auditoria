@@ -6,15 +6,20 @@ Sistema desenvolvido para auxiliar na auditoria de contas hospitalares, permitin
 
 A aplicação está disponível em:
 
-➡️ auditoria-teal.vercel.app
+➡️ auditoria-production-bc5d.up.railway.app
 
 ## 🛠️ Tecnologias utilizadas
 
-- React
-- TypeScript
-- Vite
-- CSS
-- Vercel (Deploy)
+*React 19 — construção da interface
+*TypeScript — tipagem e desenvolvimento
+*Vite — criação e execução do projeto
+*React Router — navegação entre páginas
+*Tailwind CSS — estilização da interface
+*Lucide React — ícones
+*Figma — prototipação e desenvolvimento inicial da interface
+*Git e GitHub — versionamento e hospedagem do código
+*Railway — deploy da aplicação
+
 
 ## Como executar localmente
 
