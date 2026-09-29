@@ -32,7 +32,7 @@ export default function Calculadora() {
   const valorMax = Math.ceil((valorBase * 1.4) / 10) * 10
 
   const contaNum = parseFloat(valorConta.replace(',', '.')) || 0
-  const potencialGlosa = contaNum > 0 ? contaNum * 0.18 : null
+  const potencialGlosa = contaNum > 0 ? contaNum * 0.15 : null
 
   function calcular() {
     setCalculado(true)
@@ -234,7 +234,7 @@ export default function Calculadora() {
                       R$ {potencialGlosa.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                     </div>
                     <p className="text-teal-700 text-xs">
-                      Baseado em média histórica de 18% de inconsistências em contas desta categoria. Valor sujeito à auditoria real.
+                      Baseado em média histórica de 15% de inconsistências em contas desta categoria. Valor sujeito à auditoria real.
                     </p>
                   </div>
                 )}
