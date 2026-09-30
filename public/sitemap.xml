@@ -6,11 +6,19 @@
   </url>
 
   <url>
-    <loc>https://auditoria-production-bc5d.up.railway.app/avaliacao/</loc>
+    <loc>https://auditoria-production-bc5d.up.railway.app/servicos</loc>
   </url>
 
   <url>
-    <loc>https://auditoria-production-bc5d.up.railway.app/contato/</loc>
+    <loc>https://auditoria-production-bc5d.up.railway.app/como-funciona</loc>
+  </url>
+
+  <url>
+    <loc>https://auditoria-production-bc5d.up.railway.app/avaliacao</loc>
+  </url>
+
+  <url>
+    <loc>https://auditoria-production-bc5d.up.railway.app/contato</loc>
   </url>
 
 </urlset>
