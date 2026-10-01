@@ -1,4 +1,4 @@
-# AuditMed
+# Audit-
 
 Site profissional desenvolvido para apresentar minha experiência e atuação na área de auditoria de contas hospitalares, além de facilitar o contato com pessoas interessadas em conhecer e contratar meus serviços.
 
@@ -31,7 +31,7 @@ O formulário de contato possui integração com a API do Telegram. Após o pree
 
 ```bash
 git clone https://github.com/Lascoski/auditmed.git
-cd auditmed
+cd audit
 npm install
 npm run dev
 ```
