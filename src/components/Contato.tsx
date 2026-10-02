@@ -22,7 +22,7 @@ export default function Contato() {
   setEnviando(true)
 
   try {
-    const resposta = await fetch('http://localhost:3001/contato', {
+    const resposta = await fetch('/contato', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
